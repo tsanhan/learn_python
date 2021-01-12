@@ -227,3 +227,8 @@ def main():
     battle.startFight(paul, sam)
  
 main()
+
+
+# 🤔 maybe learn some other data structures like linked lists => trees => grapphs 
+# and start searching in them 
+# (dfs in a tree, dfs in a graph is a bit different (can point to itself so... we can mark the node as visited )) 

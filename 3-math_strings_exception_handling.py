@@ -5,6 +5,7 @@
 #   Floats
 #   String
 #   More...
+
 # ---------- FORCE USER TO ENTER A NUMBER ----------
 # By giving the while a value of True it will cycle until a break is reached
 while True:
@@ -63,7 +64,7 @@ import math
 print("ceil(4.4) = ", math.ceil(4.4))
 print("floor(4.4) = ", math.floor(4.4))
 print("fabs(-4.4) = ", math.fabs(-4.4))
- 
+
 # Factorial = 1 * 2 * 3 * 4
 print("factorial(4) = ", math.factorial(4))
  
@@ -72,19 +73,19 @@ print("fmod(5,4) = ", math.fmod(5,4))
  
 # Receive a float and return an int
 print("trunc(4.2) = ", math.trunc(4.2))
- 
+
 # Return x^y
 print("pow(2,2) = ", math.pow(2,2))
  
 # Return the square root
 print("sqrt(4) = ", math.sqrt(4))
- 
+
 # Special values
 print("math.e = ", math.e)
 print("math.pi = ", math.pi)
  
 # Return e^x
-print("exp(4) = ", math.factorial(4))
+print("exp(4) = ", math.exp(4))
  
 # Return the natural logarithm e * e * e ~= 20 so log(20) tells
 # you that e^3 ~= 20
@@ -101,7 +102,7 @@ print("log10(1000) = ", math.log10(1000))
 # atanh, sinh, cosh, tanh
  
 # Convert radians to degrees and vice versa
-print("degrees(1.5708) = ", math.degrees(1.5708))
+print("degrees(1.5708) = ", math.degrees(math.pi /2))
 print("radians(90) = ", math.radians(90))
  
 # ---------- ACCURATE FLOATING POINT CALCULATIONS ----------
@@ -112,7 +113,7 @@ print("radians(90) = ", math.radians(90))
 # We create an alias being D here to avoid conflicts with methods with
 # the same name
 from decimal import Decimal as D
- 
+
 sum = D(0)
 sum += D("0.01")
 sum += D("0.01")
@@ -179,7 +180,7 @@ for i in range(0, len(samp_string)-1, 2):
  
 # You can get the Unicode code with ord()
 print("A =", ord("A"))
- 
+
 # You can convert from Unicode with chr
 print("65 =", chr(65))
  
@@ -196,12 +197,12 @@ secret_string = ""
 for char in norm_string:
  
     # Store each character code in a new string
-    secret_string += str(ord(char))
+    secret_string += str(ord(char) - 23)
  
 print("Secret Message :", secret_string)
- 
+
 norm_string = ""
- 
+
 # Cycle through each character code 2 at a time by incrementing by
 # 2 each time through since unicodes go from 65 to 90
 for i in range(0, len(secret_string)-1, 2):
@@ -210,16 +211,16 @@ for i in range(0, len(secret_string)-1, 2):
     char_code = secret_string[i] + secret_string[i+1]
  
     # Convert the codes into characters and add them to the new string
-    norm_string += chr(int(char_code))
- 
+    norm_string += chr(int(char_code) + 23)
+
 print("Original Message :", norm_string)
  
 # ---------- SUPER AWESOME MIND SCRAMBLING PROBLEM ----------
 # Make the above work with upper and lowercase with 1 addition and
 # 1 subtraction
- 
+
 # Add these 2 changes
  
 # secret_string += str(ord(char) - 23)
- 
+
 # norm_string += chr(int(char_code) + 23)

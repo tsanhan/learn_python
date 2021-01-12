@@ -30,7 +30,7 @@ print((i % 2) == 0)
 # Use for to loop through the list from 1 to 21
  
 for i in range(1, 21):
- 
+
 # Use modulus to check that the result is NOT EQUAL to 0
 # Print the odds
  
@@ -62,7 +62,7 @@ interest_rate = input("Interest Rate: ")
  
 # Convert value to a float
 money = float(money)
- 
+
 # Convert value to a float and round the percentage rate by 2 digits
 interest_rate = float(interest_rate) * .01
  
@@ -81,7 +81,7 @@ print("Investment after 10 years: {:.2f}".format(money))
 # This should print 0 but it doesn't
 i = 0.1 + 0.1 + 0.1 - 0.3
 print(i)
- 
+
 # Floats will print nonsense beyond 16 digits of precision
 i = .11111111111111111111111111111111
 j = .00000000000000010000000000000001

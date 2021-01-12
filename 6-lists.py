@@ -4,7 +4,7 @@
 # List Comprehensions
 
 # ---------- LEARN TO PROGRAM 6 ----------
- 
+
 import random
 import math
  
@@ -149,14 +149,14 @@ numList.remove(10)
 for k in numList:
     print(k, end=", ")
 print()
- 
+
 # Remove item at index
 numList.pop(2)
  
 for k in numList:
     print(k, end=", ")
 print()
- 
+
 # ---------- LIST COMPREHENSIONS ----------
 # You can construct lists in interesting ways using
 # list comprehensions
@@ -236,7 +236,7 @@ for i in range(1, 10):
  
         # Assign the value to the cell
         multTable[i][j] = i * j
- 
+
 # Output the data in the same way you assigned it
 for i in range(1, 10):
  
@@ -244,3 +244,6 @@ for i in range(1, 10):
         print(multTable[i][j], end=", ")
  
     print()
+
+# challange: without lops: 
+# multTable = [[(i+1) * (j+1) for j in range(10)] for i in range(10)]

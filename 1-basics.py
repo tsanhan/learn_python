@@ -119,7 +119,7 @@ else:
 # >= : Greater than or equal to
 # <= : Less than or equal to
 # != : Not equal to
- 
+
 # ---------- IS BIRTHDAY IMPORTANT ----------
 # We'll provide different output based on age
 # 1 - 18 -> Important
@@ -128,7 +128,7 @@ else:
  
 # eval() converts a string into an integer if it meets the guidelines
 age = eval(input("Enter age: "))
- 
+
 # Logical operators can be used to combine conditions
 # and : If both are true it returns true
 # or : If either are true it returns true
@@ -157,7 +157,7 @@ else:
  
 # Ask for the age
 age = eval(input("Enter age: "))
- 
+
 # Handle if age < 5
 if age < 5:
     print("Too Young for School")
@@ -176,3 +176,4 @@ elif (age > 5) and (age <= 17):
 # Handle everyone else
 else:
     print("Go to College")
+

@@ -148,7 +148,7 @@ print("Is Pi a Float :", isfloat(pi))
 # Receive the message to encrypt and the number of characters to shift
 message = input("Enter your message : ")
 key = int(input("How many characters should we shift (1 - 26)"))
- 
+
 # Prepare your secret message
 secret_message = ""
  
